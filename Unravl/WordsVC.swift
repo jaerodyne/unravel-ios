@@ -10,6 +10,10 @@ import UIKit
 
 class WordsVC: UIViewController {
 
+    @IBOutlet weak var wordsCounterLbl: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
