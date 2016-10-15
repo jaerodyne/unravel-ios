@@ -171,7 +171,9 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="GGj-tl-ICg" firstAttribute="leading" secondItem="yha-L7-7Jm" secondAttribute="trailing" constant="60" id="bPj-fC-qWq"/>
                                     <constraint firstItem="yha-L7-7Jm" firstAttribute="height" secondItem="GGj-tl-ICg" secondAttribute="height" id="cn9-ER-ape"/>
+                                    <constraint firstItem="GGj-tl-ICg" firstAttribute="leading" secondItem="yha-L7-7Jm" secondAttribute="trailing" constant="10" id="iKx-PN-uQi"/>
                                     <constraint firstItem="GGj-tl-ICg" firstAttribute="leading" secondItem="yha-L7-7Jm" secondAttribute="trailing" constant="20" id="tWG-CK-5lN"/>
                                 </constraints>
                             </stackView>
@@ -272,7 +274,7 @@
                                 <state key="normal" title="Home"/>
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
-                                <frame key="frameInset" minX="20" minY="110" width="627" height="212"/>
+                                <frame key="frameInset" minY="110" width="667" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
