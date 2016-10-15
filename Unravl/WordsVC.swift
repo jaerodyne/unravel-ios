@@ -18,6 +18,7 @@ class WordsVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let localfilePath = Bundle.main.url(forResource: "home", withExtension: "html");
+//        webView.scalesPageToFit =
         let myRequest = NSURLRequest(url: localfilePath!);
         webView.loadRequest(myRequest as URLRequest);
     }
