@@ -12,12 +12,14 @@ class WordsVC: UIViewController {
 
     @IBOutlet weak var wordsCounterLbl: UILabel!
     
-    
-    
+    @IBOutlet var webView: UIWebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
+        let localfilePath = Bundle.main.url(forResource: "home", withExtension: "html");
+        let myRequest = NSURLRequest(url: localfilePath!);
+        webView.loadRequest(myRequest as URLRequest);
     }
 
     override func didReceiveMemoryWarning() {
