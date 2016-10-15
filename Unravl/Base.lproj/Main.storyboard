@@ -77,103 +77,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yha-L7-7Jm">
-                                <frame key="frameInset" minX="65" minY="86" width="247" height="260"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-7S-NrF">
-                                        <frame key="frameInset" minX="83" width="164" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Green Eggs and Ham">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="x1E-VB-Jw3" kind="show" id="iGx-dE-geP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jQ-SW-A1g">
-                                        <frame key="frameInset" minX="149" minY="56" width="98" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="The Odyssey">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DP-bC-hLq">
-                                        <frame key="frameInset" minY="112" width="247" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="This Is a Book About Something ">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BP7-ny-OqQ">
-                                        <frame key="frameInset" minX="124" minY="168" width="123" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="The Little Prince">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCj-3k-0HM">
-                                        <frame key="frameInset" minX="83" minY="224" width="164" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Green Eggs and Ham">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GGj-tl-ICg">
-                                <frame key="frameInset" minX="343" minY="86" width="261" height="260"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuT-cI-D8W">
-                                        <frame key="frameInset" width="236" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Their Eyes Were Watching God">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ww-pa-Rr8">
-                                        <frame key="frameInset" minY="56" width="55" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Ulysses">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZx-bt-Trn">
-                                        <frame key="frameInset" minY="112" width="159" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Go the F**k to Sleep">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQR-e4-Fkx">
-                                        <frame key="frameInset" minY="168" width="139" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Catcher in the Rye">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pc-SM-S0t">
-                                        <frame key="frameInset" minY="224" width="261" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="7 Habits of Highly Effective People">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-RT-LAT">
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlk-nv-4xR">
+                                <frame key="frameInset" minX="81" minY="95" width="508" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yha-L7-7Jm">
+                                        <frame key="frameInset" width="247" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-7S-NrF">
+                                                <frame key="frameInset" minX="83" width="164" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Green Eggs and Ham">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="x1E-VB-Jw3" kind="show" id="iGx-dE-geP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jQ-SW-A1g">
+                                                <frame key="frameInset" minX="149" minY="56" width="98" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="The Odyssey">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DP-bC-hLq">
+                                                <frame key="frameInset" minY="112" width="247" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="This Is a Book About Something ">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BP7-ny-OqQ">
+                                                <frame key="frameInset" minX="124" minY="168" width="123" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="The Little Prince">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCj-3k-0HM">
+                                                <frame key="frameInset" minX="83" minY="224" width="164" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Green Eggs and Ham">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GGj-tl-ICg">
+                                        <frame key="frameInset" minX="247" width="261" height="260"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuT-cI-D8W">
+                                                <frame key="frameInset" width="236" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Their Eyes Were Watching God">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ww-pa-Rr8">
+                                                <frame key="frameInset" minY="56" width="55" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Ulysses">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZx-bt-Trn">
+                                                <frame key="frameInset" minY="112" width="159" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Go the F**k to Sleep">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQR-e4-Fkx">
+                                                <frame key="frameInset" minY="168" width="139" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Catcher in the Rye">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pc-SM-S0t">
+                                                <frame key="frameInset" minY="224" width="261" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="7 Habits of Highly Effective People">
+                                                    <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yha-L7-7Jm" firstAttribute="height" secondItem="GGj-tl-ICg" secondAttribute="height" id="cn9-ER-ape"/>
+                                    <constraint firstItem="GGj-tl-ICg" firstAttribute="leading" secondItem="yha-L7-7Jm" secondAttribute="trailing" constant="20" id="tWG-CK-5lN"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="enO-XG-dlI" firstAttribute="top" secondItem="wRi-RT-LAT" secondAttribute="bottom" constant="285" id="7ZS-KF-2yy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wRi-RT-LAT" secondAttribute="trailing" constant="247" id="Y9v-Qq-qQy"/>
                             <constraint firstItem="wRi-RT-LAT" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="246" id="Zsq-xK-MXa"/>
-                            <constraint firstItem="yha-L7-7Jm" firstAttribute="centerX" secondItem="FpQ-pn-lR3" secondAttribute="centerX" id="c5W-e7-sum"/>
-                            <constraint firstItem="GGj-tl-ICg" firstAttribute="centerX" secondItem="FpQ-pn-lR3" secondAttribute="centerX" id="co7-rN-JJV"/>
-                            <constraint firstItem="wRi-RT-LAT" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="8" id="gUP-vl-Nbf"/>
+                            <constraint firstItem="wRi-RT-LAT" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="20" id="gUP-vl-Nbf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -214,7 +221,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="3Jg-2x-bWs" kind="show" id="Rkm-vg-0hT"/>
-        c865ff1c0f207ebc14acc60a7294c9c5a1d5202d
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -247,7 +253,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqh-aQ-8tE">
-         c865ff1c0f207ebc14acc60a7294c9c5a1d5202d
                                 <frame key="frameInset" minX="266" minY="28" width="134" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
@@ -287,7 +292,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svG-Dy-6KG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1396.5517241379312" y="648.79999999999995"/>
-     2aecb11530be0927785a445f8f8e11b9154ab87a
         </scene>
         <!--Finished GamesVC-->
         <scene sceneID="ZKC-yo-s5z">
