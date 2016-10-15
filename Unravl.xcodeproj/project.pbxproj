@@ -15,6 +15,7 @@
 		A5A180EE1DB1456D0008F737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A180EC1DB1456D0008F737 /* LaunchScreen.storyboard */; };
 		A5A180F61DB14BF30008F737 /* StoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180F51DB14BF30008F737 /* StoriesVC.swift */; };
 		A5A180F81DB16B100008F737 /* ChaptersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180F71DB16B100008F737 /* ChaptersVC.swift */; };
+		A5D3C7641DB1E4ED00CEC0E1 /* FinishedGamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A5A180EF1DB1456D0008F737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A180F51DB14BF30008F737 /* StoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
 		A5A180F71DB16B100008F737 /* ChaptersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersVC.swift; sourceTree = "<group>"; };
+		A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedGamesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				A5A180EC1DB1456D0008F737 /* LaunchScreen.storyboard */,
 				A5A180E71DB1456D0008F737 /* Main.storyboard */,
 				0988C63E1DB1A24D00166557 /* WordsVC.swift */,
+				A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */,
 			);
 			path = Unravl;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				0988C63F1DB1A24D00166557 /* WordsVC.swift in Sources */,
 				A5A180E61DB1456D0008F737 /* MainVC.swift in Sources */,
 				A5A180F81DB16B100008F737 /* ChaptersVC.swift in Sources */,
+				A5D3C7641DB1E4ED00CEC0E1 /* FinishedGamesVC.swift in Sources */,
 				A5A180E41DB1456D0008F737 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5FDK5DU7G6;
 				INFOPLIST_FILE = Unravl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litaf.Unravl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5FDK5DU7G6;
 				INFOPLIST_FILE = Unravl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litaf.Unravl;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,19 +1,15 @@
 //
-//  WordsVC.swift
+//  FinishedGamesVC.swift
 //  Unravl
 //
-//  Created by Apprentice on 10/14/16.
+//  Created by Jillian Somera on 10/14/16.
 //  Copyright © 2016 Lit AF. All rights reserved.
 //
 
 import UIKit
 
-class WordsVC: UIViewController {
+class FinishedGamesVC: UIViewController {
 
-    @IBOutlet weak var wordsCounterLbl: UILabel!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
