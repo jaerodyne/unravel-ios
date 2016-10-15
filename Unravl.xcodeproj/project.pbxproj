@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0988C63F1DB1A24D00166557 /* WordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988C63E1DB1A24D00166557 /* WordsVC.swift */; };
+		09941BA51DB2D961004B4058 /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 09941BA41DB2D961004B4058 /* home.html */; };
 		A5A180E41DB1456D0008F737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180E31DB1456D0008F737 /* AppDelegate.swift */; };
 		A5A180E61DB1456D0008F737 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180E51DB1456D0008F737 /* MainVC.swift */; };
 		A5A180E91DB1456D0008F737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A180E71DB1456D0008F737 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0988C63E1DB1A24D00166557 /* WordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsVC.swift; sourceTree = "<group>"; };
+		09941BA41DB2D961004B4058 /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		A5A180E01DB1456D0008F737 /* Unravl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unravl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A180E31DB1456D0008F737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A180E51DB1456D0008F737 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A180EF1DB1456D0008F737 /* Info.plist */,
+				09941BA41DB2D961004B4058 /* home.html */,
 				A5A180E31DB1456D0008F737 /* AppDelegate.swift */,
 				A5A180F71DB16B100008F737 /* ChaptersVC.swift */,
 				A5A180E51DB1456D0008F737 /* MainVC.swift */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A180EE1DB1456D0008F737 /* LaunchScreen.storyboard in Resources */,
+				09941BA51DB2D961004B4058 /* home.html in Resources */,
 				A5A180EB1DB1456D0008F737 /* Assets.xcassets in Resources */,
 				A5A180E91DB1456D0008F737 /* Main.storyboard in Resources */,
 			);
