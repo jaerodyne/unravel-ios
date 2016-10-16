@@ -10,7 +10,7 @@ import UIKit
 
 class StoriesVC: UIViewController {
     
-    let baseURL = "https://horoscope-api.herokuapp.com/horoscope/today/aries"
+    let baseURL = "https://unravl.herokuapp.com/"
 
     override func viewDidLoad() {
         super.viewDidLoad()
