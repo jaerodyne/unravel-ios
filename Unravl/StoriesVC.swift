@@ -9,9 +9,20 @@
 import UIKit
 
 class StoriesVC: UIViewController {
+    
+    let baseURL = "https://horoscope-api.herokuapp.com/horoscope/today/aries"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let urlString = baseURL
+        
+        if let url = NSURL(string: urlString) {
+            if let data = try? NSData(contentsOf: url as URL, options: []) {
+                let json = JSON(data: data as Data)
+                print(json)
+            }
+        }
 
         // Do any additional setup after loading the view.
     }
