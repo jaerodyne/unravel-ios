@@ -19,14 +19,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unravl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-Au-xxL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-Au-xxL">
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cjX-YP-wm8">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00g-2j-Mzk">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00g-2j-Mzk">
+                                        <frame key="frameInset" width="56" height="64"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.11508413461538458" green="0.11508413461538458" blue="0.11508413461538458" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,7 +36,8 @@
                                             <segue destination="Kfl-ub-ylF" kind="show" id="ELF-Ac-KZV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeR-zB-nOw">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeR-zB-nOw">
+                                        <frame key="frameInset" minY="64" width="56" height="36"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Tutorial">
                                             <color key="titleColor" red="0.11508413461538458" green="0.11508413461538458" blue="0.11508413461538458" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,7 +46,8 @@
                                             <segue destination="oz8-mX-qmT" kind="show" id="Tau-Ra-g2M"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQa-cE-ekw">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQa-cE-ekw">
+                                        <frame key="frameInset" minY="100" width="56" height="36"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="About">
                                             <color key="titleColor" red="0.11508413461538458" green="0.11508413461538458" blue="0.11508413461538458" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,13 +58,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unravl-logo" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-d8-DHB"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gm2-d8-DHB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="44l-8K-QbS"/>
                             <constraint firstItem="MeR-zB-nOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fW-fi-rph"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gm2-d8-DHB" secondAttribute="trailing" constant="194" id="GJz-gi-rxP"/>
                             <constraint firstItem="HTU-Au-xxL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="HEZ-pO-xzL"/>
+                            <constraint firstItem="gm2-d8-DHB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="193" id="X5d-nd-mqV"/>
                             <constraint firstItem="cjX-YP-wm8" firstAttribute="leading" secondItem="HTU-Au-xxL" secondAttribute="leading" id="amw-X4-5bK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cjX-YP-wm8" secondAttribute="bottom" constant="45" id="d3h-Dq-hNC"/>
+                            <constraint firstItem="cjX-YP-wm8" firstAttribute="top" secondItem="gm2-d8-DHB" secondAttribute="bottom" constant="30" id="lnt-Gc-1OT"/>
                             <constraint firstItem="HTU-Au-xxL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m8Y-FB-KMo"/>
                         </constraints>
                     </view>
@@ -341,4 +349,7 @@
             <point key="canvasLocation" x="-887" y="-87"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="unravl-logo" width="300" height="100"/>
+    </resources>
 </document>
