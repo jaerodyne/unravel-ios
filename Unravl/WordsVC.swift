@@ -17,10 +17,11 @@ class WordsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let localfilePath = Bundle.main.url(forResource: "home", withExtension: "html");
-//        webView.scalesPageToFit =
-        let myRequest = NSURLRequest(url: localfilePath!);
-        webView.loadRequest(myRequest as URLRequest);
+
+//        let localfilePath = Bundle.main.url(forResource: "home", withExtension: "html");
+//        let myRequest = NSURLRequest(url: localfilePath!);
+        webView.loadRequest(NSURLRequest(url: NSURL(string: "https://d3-testing.herokuapp.com/")! as URL) as URLRequest)
+//        webView.loadRequest(myRequest as URLRequest);
     }
 
     override func didReceiveMemoryWarning() {
