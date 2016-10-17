@@ -1,15 +1,15 @@
 //
-//  ChaptersVC.swift
+//  AboutVC.swift
 //  Unravl
 //
-//  Created by Jillian Somera on 10/14/16.
+//  Created by Apprentice on 10/16/16.
 //  Copyright © 2016 Lit AF. All rights reserved.
 //
 
 import UIKit
 
-class ChaptersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+class AboutVC: UIViewController {
+
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         guard (navigationController?.popViewController(animated:true)) != nil
             else {
@@ -17,11 +17,6 @@ class ChaptersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 return
         }
     }
-
-//    pick up array count for chapters from stories and seed as needed
-    var chapters = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"]
-    
-    @IBOutlet weak var chaptersTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,20 +24,6 @@ class ChaptersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         // Do any additional setup after loading the view.
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chapters.count
-    }
-    
-    func tableView( _ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = chapters[(indexPath as NSIndexPath).row]
-        cell.textLabel?.font = UIFont(name: "Avenir Light", size:17)
-        cell.textLabel?.textAlignment = .center
-        return cell
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

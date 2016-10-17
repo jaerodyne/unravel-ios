@@ -10,28 +10,77 @@ import UIKit
 
 class StoriesVC: UIViewController {
     
-    let baseURL = "https://horoscope-api.herokuapp.com/horoscope/today/aries"
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let urlString = baseURL
-        
-        if let url = NSURL(string: urlString) {
-            if let data = try? NSData(contentsOf: url as URL, options: []) {
-                let json = JSON(data: data as Data)
-                print(json)
-            }
+    
+    @IBOutlet weak var story: UIButton!
+    
+    @IBAction func backBtnPressed(_ sender: AnyObject) {
+        guard (navigationController?.popViewController(animated:true)) != nil
+            else {
+                print("No Navigation Controller")
+                return
         }
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+//    func getJSON() {
+//        
+//        let url = NSURL(string: baseURL)
+//        let request = URLRequest(url: url! as URL)
+//        let session = URLSession(configuration: URLSessionConfiguration.default)
+//        let task = session.dataTask(with: request) { (data, response, error) -> Void in
+//            
+//            if error == nil {
+//                let swiftyJSON = JSON(data: data!)
+//                let theTitle = swiftyJSON["results"].arrayValue
+//                
+//                for title in theTitle {
+//                    let titles = title["title"].stringValue
+//                    print(titles)
+//                }
+//                
+//                //                print(theTitle)
+//                
+//            } else {
+//                print("There was an error")
+//            }
+//            
+//        }
+//        
+//        task.resume()
+//    }
     
+    
+//    func getJSON() {
+//
+//        let url = NSURL(string: baseURL)
+//        let request = URLRequest(url: url! as URL)
+//        let session = URLSession(configuration: URLSessionConfiguration.default)
+//        let task = session.dataTask(with: request) { (data, response, error) -> Void in
+//            
+//            if error == nil {
+//                let swiftyJSON = JSON(data: data!)
+//                let theTitle = swiftyJSON["results"].arrayValue
+//                
+//                for title in theTitle {
+//                    let titles = title["title"].stringValue
+//                    print(titles)
+//                }
+//                
+//                //                print(theTitle)
+//                
+//            } else {
+//                print("There was an error")
+//            }
+//            
+//        }
+//        
+//        task.resume()
+//    }
+//    
 
     /*
     // MARK: - Navigation

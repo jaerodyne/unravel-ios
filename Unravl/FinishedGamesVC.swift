@@ -9,6 +9,14 @@
 import UIKit
 
 class FinishedGamesVC: UIViewController {
+    
+    @IBAction func homeBtnPressed(_ sender: AnyObject) {
+        guard navigationController?.popToRootViewController(animated: true) != nil
+            else {
+                print("No Navigation Controller")
+                return
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
