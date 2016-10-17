@@ -10,6 +10,15 @@ import UIKit
 
 class StoriesVC: UIViewController {
     
+    @IBAction func backBtnPressed(_ sender: AnyObject) {
+        guard (navigationController?.popViewController(animated:true)) != nil
+            else {
+                print("No Navigation Controller")
+                return
+        }
+    }
+    
+    
     let baseURL = "https://unravl.herokuapp.com/"
 
     override func viewDidLoad() {

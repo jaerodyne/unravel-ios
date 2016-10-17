@@ -10,6 +10,14 @@ import UIKit
 
 class AboutVC: UIViewController {
 
+    @IBAction func backBtnPressed(_ sender: AnyObject) {
+        guard (navigationController?.popViewController(animated:true)) != nil
+            else {
+                print("No Navigation Controller")
+                return
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

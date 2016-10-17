@@ -10,6 +10,15 @@ import UIKit
 
 class ChaptersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBAction func backBtnPressed(_ sender: AnyObject) {
+        guard (navigationController?.popViewController(animated:true)) != nil
+            else {
+                print("No Navigation Controller")
+                return
+        }
+    }
+
+    
     var chapters = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"]
     
     @IBOutlet weak var chaptersTableView: UITableView!
