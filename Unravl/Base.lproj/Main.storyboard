@@ -250,14 +250,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn3-bA-tlg">
-                                <frame key="frameInset" minX="20" minY="325" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <action selector="homeBtnPressed:" destination="3Jg-2x-bWs" eventType="touchUpInside" id="jjd-rv-cZr"/>
-                                </connections>
-                            </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
                                 <frame key="frameInset" minY="110" width="667" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -272,6 +264,14 @@
                                 </state>
                                 <connections>
                                     <segue destination="xB4-PW-FDp" kind="show" id="uuo-Z6-NTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn3-bA-tlg">
+                                <frame key="frameInset" minY="330" width="62" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="next_menu_btn"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="3Jg-2x-bWs" eventType="touchUpInside" id="jjd-rv-cZr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -322,6 +322,15 @@
                                     <color key="titleColor" red="0.1228565705" green="0.1228565705" blue="0.1228565705" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-sl-4mX">
+                                <frame key="frameInset" minX="13" minY="334" width="62" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="next_menu_btn"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="3Jg-2x-bWs" eventType="touchUpInside" id="Feq-xb-Ho3"/>
+                                    <action selector="homeBtnPressed:" destination="xB4-PW-FDp" eventType="touchUpInside" id="iHQ-VR-V0J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -350,6 +359,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="next_menu_btn" width="15" height="9"/>
         <image name="unravl-logo" width="300" height="100"/>
     </resources>
 </document>
