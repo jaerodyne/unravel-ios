@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import WebKit
 
-class WordsVC: UIViewController {
+class WordsVC: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var wordsCounterLbl: UILabel!
     
@@ -21,20 +22,39 @@ class WordsVC: UIViewController {
                 return
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let url = Bundle.main.url(forResource: "home", withExtension: "html") {
+            let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
+            let myRequest = NSURLRequest(url: fragUrl as URL)
+            webView.delegate = self
+            webView.loadRequest(myRequest as URLRequest)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         getJSON()
         
-        webView.loadRequest(NSURLRequest(url: NSURL(string: "https://d3-testing.herokuapp.com/")! as URL) as URLRequest)
-        //        let localfilePath = Bundle.main.url(forResource: "home", withExtension: "html");
-        //        let myRequest = NSURLRequest(url: localfilePath!);
-//        webView.loadRequest(myRequest as URLRequest);
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        NSLog("request: \(request)")
+        
+        if let scheme = request.url?.scheme {
+            if scheme == "mike" {
+//                now we can react
+                NSLog("we got a mike request: \(scheme)")
+                
+                if let result = webView.stringByEvaluatingJavaScript(from: "someJavascriptFunc()") {
+                    NSLog("result: \(result)")
+                }
+                return false
+            }
+        }
+        return true
+    }
     }
     
     let baseURL = "https://unravl.herokuapp.com/"
@@ -78,4 +98,4 @@ class WordsVC: UIViewController {
 //        If so, segue to next page
         
     }
-}
+
