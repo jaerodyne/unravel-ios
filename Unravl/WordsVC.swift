@@ -41,7 +41,20 @@ class WordsVC: UIViewController, UIWebViewDelegate {
 
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         NSLog("request: \(request)")
+        
+        if let scheme = request.url?.scheme {
+            if scheme == "mike" {
+//                now we can react
+                NSLog("we got a mike request: \(scheme)")
+                
+                if let result = webView.stringByEvaluatingJavaScript(from: "someJavascriptFunc()") {
+                    NSLog("result: \(result)")
+                }
+                return false
+            }
+        }
         return true
+    }
     }
     
     let baseURL = "https://unravl.herokuapp.com/"
@@ -85,4 +98,4 @@ class WordsVC: UIViewController, UIWebViewDelegate {
 //        If so, segue to next page
         
     }
-}
+
