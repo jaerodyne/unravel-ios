@@ -24,7 +24,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if let url = Bundle.main.url(forResource: "home", withExtension: "html") {
+        if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "public") {
             let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
             let myRequest = NSURLRequest(url: fragUrl as URL)
             webView.delegate = self
