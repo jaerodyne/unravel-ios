@@ -257,6 +257,9 @@
                                 <frame key="frameInset" minX="20" minY="325" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="3Jg-2x-bWs" eventType="touchUpInside" id="jjd-rv-cZr"/>
+                                </connections>
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
                                 <frame key="frameInset" minY="110" width="667" height="212"/>
@@ -333,7 +336,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jm0-vf-mbB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sAQ-96-LvH" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sAQ-96-LvH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Y9-P0-egb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
