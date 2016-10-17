@@ -94,7 +94,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-7S-NrF">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-7S-NrF">
+                                <frame key="frameInset" minX="20" minY="170" width="627" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="The Fountainhead">
                                     <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,17 +117,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kYj-7S-NrF" firstAttribute="centerX" secondItem="FpQ-pn-lR3" secondAttribute="centerX" id="Wt7-e5-HAV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wRi-RT-LAT" secondAttribute="trailing" constant="247" id="Y9v-Qq-qQy"/>
                             <constraint firstItem="wRi-RT-LAT" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="246" id="Zsq-xK-MXa"/>
                             <constraint firstItem="wRi-RT-LAT" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="20" id="gUP-vl-Nbf"/>
-                            <constraint firstItem="kYj-7S-NrF" firstAttribute="centerY" secondItem="FpQ-pn-lR3" secondAttribute="centerY" id="rwR-fK-HAd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="story" destination="kYj-7S-NrF" id="gNt-Hu-Zk1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvP-hM-Y0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="-1002"/>
+            <point key="canvasLocation" x="609.44527736131943" y="-1002.4"/>
         </scene>
         <!--TutorialVC-->
         <scene sceneID="Hjw-48-GNe">
