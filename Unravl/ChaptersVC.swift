@@ -18,7 +18,7 @@ class ChaptersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
 
-    
+//    pick up array count for chapters from stories and seed as needed
     var chapters = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"]
     
     @IBOutlet weak var chaptersTableView: UITableView!
