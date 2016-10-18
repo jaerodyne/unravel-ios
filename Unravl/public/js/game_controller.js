@@ -23,3 +23,5 @@ $(function() {
 	// sentences = getSentences();
 	run(sentences[currentSentenceIndex]);
 });
+
+function end(){};

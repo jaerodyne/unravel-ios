@@ -35,64 +35,16 @@ class WordsVC: UIViewController, UIWebViewDelegate {
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-//        if let result = webView.stringByEvaluatingJavaScript(from: "end()") {
-//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+    override func viewDidAppear(_ animated: Bool) {
+        if webView.stringByEvaluatingJavaScript(from: "end()") != nil {
+            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
         
-//            NSLog("result: \(result)")
-//        }
-
-        
-    }
-
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        NSLog("request: \(request)")
-        
-        if let scheme = request.url?.scheme {
-            if scheme == "mike" {
-//                now we can react
-                NSLog("we got a mike request: \(scheme)")
-                
-                if let result = webView.stringByEvaluatingJavaScript(from: "end()") {
-                    performSegue(withIdentifier: "FinishedGamesVC",  sender: nil)
-
-                    NSLog("result: \(result)")
-                }
-                return false
-            }
+            NSLog("viewDidAppear")
         }
-        return true
-    }
-    }
-    
-    let baseURL = "https://unravl.herokuapp.com/"
-    
-    func getJSON() -> String {
-        
-        let urlString = baseURL
-        
-        var sentence = ""
-        
-        if let url = NSURL(string: urlString) {
-            if let data = try? NSData(contentsOf: url as URL, options: []) {
-                let json = JSON(data: data as Data)
-                
-                var contentArray = [String]()
-                
-                for (_, value) in json {
-                    let content = value["content"].stringValue
-                    contentArray.append(content)
-                }
-                sentence = contentArray.joined(separator: "/n") + "/n"
-//                iterate through array and pass each sentence to javascript, deleting the object each time it's passed through
-                
-            }
-        }
-        return sentence
     }
 
+}
     /*
     // MARK: - Navigation
 
