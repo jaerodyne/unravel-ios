@@ -34,17 +34,50 @@ class WordsVC: UIViewController, UIWebViewDelegate {
             webView.loadRequest(myRequest as URLRequest)
         }
     }
-
-
-    override func viewDidAppear(_ animated: Bool) {
-        if webView.stringByEvaluatingJavaScript(from: "end()") != nil {
-            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-            NSLog("viewDidAppear")
-        }
+        // Do any additional setup after loading the view.
     }
 
-}
+    override func viewDidAppear(_ animated: Bool) {
+//        if let result = webView.stringByEvaluatingJavaScript(from: "window.location") {
+//            print("this is \(result)")
+//        }
+    }
+    
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if String(describing: request) == "https://www.google.com/" {
+            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+
+        }
+        return true
+    }
+    
+//    func nextPage()  {
+    
+//        performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+    
+//        let result = webView.stringByEvaluatingJavaScript(from: "end")
+//        while result == nil {
+//            print("YO")
+//        }
+//            NSLog(webView.stringByEvaluatingJavaScript(from: "end")!)
+
+//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+        
+//            NSLog("viewDidAppear")
+//        }
+    }
+
+//}
+
+//        if let result = webView.stringByEvaluatingJavaScript(from: "end()") {
+//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+
+//            NSLog("result: \(result)")
+//        }
     /*
     // MARK: - Navigation
 
@@ -54,7 +87,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-        
+
 //        Check if javascript function is run?
 //        If so, segue to next page
         

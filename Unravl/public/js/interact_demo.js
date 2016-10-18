@@ -12,7 +12,7 @@ function renderInteract() {
         elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
       },
       // enable autoScroll
-      autoScroll: true,
+      // autoScroll: true,
 
       // call this function on every dragmove event
       onmove: dragMoveListener,
@@ -73,10 +73,10 @@ function renderInteract() {
       console.log('drag leave');
     },
     ondrop: function (event) {
+      console.log('drop');
       if (currentSentenceIndex === sentences.length - 1) {
         console.log("The game is finished, I've just made a call to swift");
-        // JS TO SWIFT
-        (function end(){});
+        window.location = "https://www.google.com/";
       } else {
         currentSentenceIndex += 1;
         run(sentences[currentSentenceIndex]);
@@ -86,7 +86,7 @@ function renderInteract() {
       // remove active dropzone feedback
       event.target.classList.remove('drop-active');
       event.target.classList.remove('drop-target');
-      console.log('drop activate');
+      console.log('drop deactivate');
     }
   });
 }
