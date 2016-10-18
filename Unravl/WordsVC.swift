@@ -66,21 +66,17 @@ class WordsVC: UIViewController, UIWebViewDelegate {
         if let url = NSURL(string: urlString) {
             if let data = try? NSData(contentsOf: url as URL, options: []) {
                 let json = JSON(data: data as Data)
-//              print(json)
                 
                 var contentArray = [String]()
                 
                 for (_, value) in json {
-                    //                    print( (value["content"]))
                     let content = value["content"].stringValue
-                    //                    print(content)
                     contentArray.append(content)
-                    //                    story.setTitle(content, for: UIControlState.normal)
                 }
-                print(contentArray)
+                let sentence = contentArray.joined(separator: "/n") + "/n"
+                print("I am a \(sentence)")
 //                iterate through array and pass each sentence to javascript, deleting the object each time it's passed through
-//                _ = contentArray.first
-//                sentence.setTitle(title, for: UIControlState.normal)
+
             }
         }
 
