@@ -24,6 +24,9 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        print(getJSON())
+        
         if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "public") {
             let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
             let myRequest = NSURLRequest(url: fragUrl as URL)
@@ -35,7 +38,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getJSON()
+
         
     }
 
@@ -59,9 +62,11 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     
     let baseURL = "https://unravl.herokuapp.com/"
     
-    func getJSON() {
+    func getJSON() -> String {
         
         let urlString = baseURL
+        
+        var sentence = ""
         
         if let url = NSURL(string: urlString) {
             if let data = try? NSData(contentsOf: url as URL, options: []) {
@@ -73,12 +78,13 @@ class WordsVC: UIViewController, UIWebViewDelegate {
                     let content = value["content"].stringValue
                     contentArray.append(content)
                 }
-                let sentence = contentArray.joined(separator: "/n") + "/n"
-                print("I am a \(sentence)")
+                sentence = contentArray.joined(separator: "/n") + "/n"
 //                iterate through array and pass each sentence to javascript, deleting the object each time it's passed through
-
+                
             }
         }
+        return sentence
+    }
 
     /*
     // MARK: - Navigation
@@ -93,5 +99,5 @@ class WordsVC: UIViewController, UIWebViewDelegate {
 //        Check if javascript function is run?
 //        If so, segue to next page
         
-    }
+
 
