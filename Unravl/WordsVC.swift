@@ -24,7 +24,10 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if let url = Bundle.main.url(forResource: "home", withExtension: "html") {
+        
+        print(getJSON())
+        
+        if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "public") {
             let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
             let myRequest = NSURLRequest(url: fragUrl as URL)
             webView.delegate = self
@@ -35,7 +38,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getJSON()
+
         
     }
 
@@ -59,30 +62,29 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     
     let baseURL = "https://unravl.herokuapp.com/"
     
-    func getJSON() {
+    func getJSON() -> String {
         
         let urlString = baseURL
+        
+        var sentence = ""
         
         if let url = NSURL(string: urlString) {
             if let data = try? NSData(contentsOf: url as URL, options: []) {
                 let json = JSON(data: data as Data)
-//              print(json)
                 
                 var contentArray = [String]()
                 
                 for (_, value) in json {
-                    //                    print( (value["content"]))
                     let content = value["content"].stringValue
-                    //                    print(content)
                     contentArray.append(content)
-                    //                    story.setTitle(content, for: UIControlState.normal)
                 }
-                print(contentArray)
+                sentence = contentArray.joined(separator: "/n") + "/n"
 //                iterate through array and pass each sentence to javascript, deleting the object each time it's passed through
-//                _ = contentArray.first
-//                sentence.setTitle(title, for: UIControlState.normal)
+                
             }
         }
+        return sentence
+    }
 
     /*
     // MARK: - Navigation
@@ -97,5 +99,5 @@ class WordsVC: UIViewController, UIWebViewDelegate {
 //        Check if javascript function is run?
 //        If so, segue to next page
         
-    }
+
 
