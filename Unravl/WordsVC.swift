@@ -38,11 +38,11 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let result = webView.stringByEvaluatingJavaScript(from: "someJavascriptFunc()") {
-            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
-            
-            NSLog("result: \(result)")
-        }
+//        if let result = webView.stringByEvaluatingJavaScript(from: "end()") {
+//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+        
+//            NSLog("result: \(result)")
+//        }
 
         
     }
@@ -55,7 +55,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
 //                now we can react
                 NSLog("we got a mike request: \(scheme)")
                 
-                if let result = webView.stringByEvaluatingJavaScript(from: "someJavascriptFunc()") {
+                if let result = webView.stringByEvaluatingJavaScript(from: "end()") {
                     performSegue(withIdentifier: "FinishedGamesVC",  sender: nil)
 
                     NSLog("result: \(result)")
