@@ -25,7 +25,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        print(getJSON())
+//        print(getJSON())
         
         if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "public") {
             let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
@@ -38,6 +38,11 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let result = webView.stringByEvaluatingJavaScript(from: "someJavascriptFunc()") {
+            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+            
+            NSLog("result: \(result)")
+        }
 
         
     }
@@ -51,6 +56,8 @@ class WordsVC: UIViewController, UIWebViewDelegate {
                 NSLog("we got a mike request: \(scheme)")
                 
                 if let result = webView.stringByEvaluatingJavaScript(from: "someJavascriptFunc()") {
+                    performSegue(withIdentifier: "FinishedGamesVC",  sender: nil)
+
                     NSLog("result: \(result)")
                 }
                 return false
