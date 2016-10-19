@@ -11,11 +11,7 @@ import UIKit
 class TutorialVC: UIViewController {
 
     @IBAction func backBtnPressed(_ sender: AnyObject) {
-        guard (navigationController?.popViewController(animated:true)) != nil
-            else {
-                print("No Navigation Controller")
-                return
-        }
+        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

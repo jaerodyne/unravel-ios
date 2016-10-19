@@ -11,11 +11,12 @@ import UIKit
 class AboutVC: UIViewController {
 
     @IBAction func backBtnPressed(_ sender: AnyObject) {
-        guard (navigationController?.popViewController(animated:true)) != nil
-            else {
-                print("No Navigation Controller")
-                return
-        }
+        self.dismiss(animated: true, completion: nil)
+//        guard (navigationController?.popViewController(animated:true)) != nil
+//            else {
+//                print("No Navigation Controller")
+//                return
+//        }
     }
     
     override func viewDidLoad() {

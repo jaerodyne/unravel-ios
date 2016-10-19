@@ -14,6 +14,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     @IBOutlet var webView: UIWebView!
     
     @IBAction func homeBtnPressed(_ sender: AnyObject) {
+//        dismiss(animated: true, completion: nil)
         guard navigationController?.popToRootViewController(animated: true) != nil
             else {
                 print("No Navigation Controller")
