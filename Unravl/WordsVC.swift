@@ -25,7 +25,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        print(getJSON())
+//        print(getJSON())
         
         if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "public") {
             let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
@@ -34,58 +34,50 @@ class WordsVC: UIViewController, UIWebViewDelegate {
             webView.loadRequest(myRequest as URLRequest)
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
         
+        // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+//        if let result = webView.stringByEvaluatingJavaScript(from: "window.location") {
+//            print("this is \(result)")
+//        }
+    }
+    
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        NSLog("request: \(request)")
-        
-        if let scheme = request.url?.scheme {
-            if scheme == "mike" {
-//                now we can react
-                NSLog("we got a mike request: \(scheme)")
-                
-                if let result = webView.stringByEvaluatingJavaScript(from: "someJavascriptFunc()") {
-                    NSLog("result: \(result)")
-                }
-                return false
-            }
+        if String(describing: request) == "https://www.google.com/" {
+            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+
         }
         return true
     }
-    }
     
-    let baseURL = "https://unravl.herokuapp.com/"
+//    func nextPage()  {
     
-    func getJSON() -> String {
+//        performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+    
+//        let result = webView.stringByEvaluatingJavaScript(from: "end")
+//        while result == nil {
+//            print("YO")
+//        }
+//            NSLog(webView.stringByEvaluatingJavaScript(from: "end")!)
+
+//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
         
-        let urlString = baseURL
-        
-        var sentence = ""
-        
-        if let url = NSURL(string: urlString) {
-            if let data = try? NSData(contentsOf: url as URL, options: []) {
-                let json = JSON(data: data as Data)
-                
-                var contentArray = [String]()
-                
-                for (_, value) in json {
-                    let content = value["content"].stringValue
-                    contentArray.append(content)
-                }
-                sentence = contentArray.joined(separator: "/n") + "/n"
-//                iterate through array and pass each sentence to javascript, deleting the object each time it's passed through
-                
-            }
-        }
-        return sentence
+//            NSLog("viewDidAppear")
+//        }
     }
 
+//}
+
+//        if let result = webView.stringByEvaluatingJavaScript(from: "end()") {
+//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
+
+//            NSLog("result: \(result)")
+//        }
     /*
     // MARK: - Navigation
 
@@ -95,7 +87,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-        
+
 //        Check if javascript function is run?
 //        If so, segue to next page
         

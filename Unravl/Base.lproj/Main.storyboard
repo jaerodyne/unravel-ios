@@ -301,7 +301,7 @@
                                     <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xB4-PW-FDp" kind="show" id="uuo-Z6-NTl"/>
+                                    <segue destination="xB4-PW-FDp" kind="show" identifier="FinishedGamesVC" id="uuo-Z6-NTl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn3-bA-tlg">
