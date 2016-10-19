@@ -10,8 +10,6 @@ import UIKit
 import WebKit
 
 class WordsVC: UIViewController, UIWebViewDelegate {
-
-    @IBOutlet weak var wordsCounterLbl: UILabel!
     
     @IBOutlet var webView: UIWebView!
     
@@ -38,13 +36,10 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
     }
 
     override func viewDidAppear(_ animated: Bool) {
-//        if let result = webView.stringByEvaluatingJavaScript(from: "window.location") {
-//            print("this is \(result)")
-//        }
+
     }
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
@@ -54,42 +49,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
         }
         return true
     }
-    
-//    func nextPage()  {
-    
-//        performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
-    
-//        let result = webView.stringByEvaluatingJavaScript(from: "end")
-//        while result == nil {
-//            print("YO")
-//        }
-//            NSLog(webView.stringByEvaluatingJavaScript(from: "end")!)
-
-//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
-        
-//            NSLog("viewDidAppear")
-//        }
-    }
-
-//}
-
-//        if let result = webView.stringByEvaluatingJavaScript(from: "end()") {
-//            performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
-
-//            NSLog("result: \(result)")
-//        }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-//        Check if javascript function is run?
-//        If so, segue to next page
+}
         
 
 
