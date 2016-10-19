@@ -98,7 +98,7 @@
                                 <frame key="frameInset" minX="20" minY="170" width="627" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="The Fountainhead">
+                                <state key="normal" title="The Little Engine That Could">
                                     <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
