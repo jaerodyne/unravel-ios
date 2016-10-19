@@ -13,6 +13,7 @@ class StoriesVC: UIViewController {
     @IBOutlet weak var story: UIButton!
     
     @IBAction func backBtnPressed(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
         guard (navigationController?.popViewController(animated:true)) != nil
             else {
                 print("No Navigation Controller")
