@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-Au-xxL">
@@ -86,7 +86,7 @@
                         <viewControllerLayoutGuide type="bottom" id="enO-XG-dlI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FpQ-pn-lR3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-RT-LAT">
@@ -139,7 +139,7 @@
                         <viewControllerLayoutGuide type="bottom" id="57f-qT-xvF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZkW-LY-6Ai">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oem-hR-Bcz">
@@ -174,7 +174,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fAX-W8-YcJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RGA-c0-5rE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fJ-TR-KSz">
@@ -192,13 +192,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcY-O1-Gfm">
+                                <frame key="frameInset" minX="89" minY="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-Kb-YNE">
+                                <frame key="frameInset" minX="48" minY="74" width="570" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">As of right now, 14% of the U.S. are unable to read. To give you a better idea, that is 32 million people. To further the gravity of this issue, this statistic hasn’t changed in 10 years.
+
+This is where Unravel comes in. We believe that by using emerging touchscreen and interactive technology, we will be able to motivate and inspire people of all ages to learn to read in a tactile, more immediate way. Our main goal is to introduce reading to our users with a sense of inherent playfulness and hands-on activity.
+
+While this is just our first version of this application, we plan on scaling it up in ways that allow users to build upon their vocabularies and their understanding of language that encourages them to explore literacy beyond the bounds of rote memorization. Experimentation has been fundamental to this project, because language is meant to be traversed rather than acquired.
+
+Ultimately, Unravel aims to move the concept of literacy into an entirely new approach to reading, and we hope to be a small part of changing the landscape of language in way that is inclusive, fun and exciting.</mutableString>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69j-Tk-her" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="801"/>
+            <point key="canvasLocation" x="608.54572713643188" y="800.79999999999995"/>
         </scene>
         <!--ChaptersVC-->
         <scene sceneID="iu0-Kd-uAb">
@@ -209,7 +230,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Cbv-Cb-jae"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fqV-V9-TxI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH7-01-3f0">
@@ -228,7 +249,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EYq-2a-HUs" id="mnb-7g-eJm">
-                                            <frame key="frameInset" width="240" height="61"/>
+                                            <frame key="frameInset" width="240" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -271,7 +292,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qSr-UV-M9x"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R62-pk-sw8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn3-bA-tlg">
@@ -318,7 +339,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZAQ-Ws-sSE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MVN-kw-ys2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkR-r7-FMa">

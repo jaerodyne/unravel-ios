@@ -19,18 +19,22 @@ class AboutVC: UIViewController {
 //        }
     }
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        scrollView = UIScrollView(frame: view.bounds)
+//        1
+//        scrollView.contentOffset = CGPoint(x: 1000, y: 450)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
+//    override func viewDidAppear(_ animated: Bool) {
+//        var contentLength: CGFloat = 0.0
+//        
+//        let scrollLength = scrollView.frame.size.length
+//    }
     /*
     // MARK: - Navigation
 

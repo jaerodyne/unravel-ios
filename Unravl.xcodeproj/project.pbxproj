@@ -12,6 +12,7 @@
 		09941BA71DB2E97D004B4058 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09941BA61DB2E97D004B4058 /* SwiftyJSON.swift */; };
 		09BD0F811DB4386600E4E14F /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD0F801DB4386600E4E14F /* AboutVC.swift */; };
 		09BD0F831DB4387700E4E14F /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD0F821DB4387700E4E14F /* TutorialVC.swift */; };
+		09BDD4B21DB81A5F00D406BE /* UnravlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BDD4B11DB81A5F00D406BE /* UnravlUITests.swift */; };
 		A5875ACB1DB6DDF800752B55 /* public in Resources */ = {isa = PBXBuildFile; fileRef = A5875ACA1DB6DDF800752B55 /* public */; };
 		A5A180E41DB1456D0008F737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180E31DB1456D0008F737 /* AppDelegate.swift */; };
 		A5A180E61DB1456D0008F737 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180E51DB1456D0008F737 /* MainVC.swift */; };
@@ -23,12 +24,25 @@
 		A5D3C7641DB1E4ED00CEC0E1 /* FinishedGamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		09BDD4B41DB81A5F00D406BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A180D81DB1456D0008F737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A180DF1DB1456D0008F737;
+			remoteInfo = Unravl;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0988C63E1DB1A24D00166557 /* WordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsVC.swift; sourceTree = "<group>"; };
 		09941BA41DB2D961004B4058 /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		09941BA61DB2E97D004B4058 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		09BD0F801DB4386600E4E14F /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		09BD0F821DB4387700E4E14F /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		09BDD4AF1DB81A5F00D406BE /* UnravlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnravlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BDD4B11DB81A5F00D406BE /* UnravlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnravlUITests.swift; sourceTree = "<group>"; };
+		09BDD4B31DB81A5F00D406BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5875ACA1DB6DDF800752B55 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		A5A180E01DB1456D0008F737 /* Unravl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unravl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A180E31DB1456D0008F737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09BDD4AC1DB81A5F00D406BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5A180DD1DB1456D0008F737 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +74,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BDD4B01DB81A5F00D406BE /* UnravlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09BDD4B11DB81A5F00D406BE /* UnravlUITests.swift */,
+				09BDD4B31DB81A5F00D406BE /* Info.plist */,
+			);
+			path = UnravlUITests;
+			sourceTree = "<group>";
+		};
 		A5A180D71DB1456D0008F737 = {
 			isa = PBXGroup;
 			children = (
 				A5A180E21DB1456D0008F737 /* Unravl */,
+				09BDD4B01DB81A5F00D406BE /* UnravlUITests */,
 				A5A180E11DB1456D0008F737 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A180E01DB1456D0008F737 /* Unravl.app */,
+				09BDD4AF1DB81A5F00D406BE /* UnravlUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +126,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		09BDD4AE1DB81A5F00D406BE /* UnravlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BDD4B61DB81A6000D406BE /* Build configuration list for PBXNativeTarget "UnravlUITests" */;
+			buildPhases = (
+				09BDD4AB1DB81A5F00D406BE /* Sources */,
+				09BDD4AC1DB81A5F00D406BE /* Frameworks */,
+				09BDD4AD1DB81A5F00D406BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BDD4B51DB81A5F00D406BE /* PBXTargetDependency */,
+			);
+			name = UnravlUITests;
+			productName = UnravlUITests;
+			productReference = 09BDD4AF1DB81A5F00D406BE /* UnravlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A5A180DF1DB1456D0008F737 /* Unravl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5A180F21DB1456D0008F737 /* Build configuration list for PBXNativeTarget "Unravl" */;
@@ -121,6 +171,12 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Lit AF";
 				TargetAttributes = {
+					09BDD4AE1DB81A5F00D406BE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5FDK5DU7G6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A5A180DF1DB1456D0008F737;
+					};
 					A5A180DF1DB1456D0008F737 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5FDK5DU7G6;
@@ -142,11 +198,19 @@
 			projectRoot = "";
 			targets = (
 				A5A180DF1DB1456D0008F737 /* Unravl */,
+				09BDD4AE1DB81A5F00D406BE /* UnravlUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		09BDD4AD1DB81A5F00D406BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5A180DE1DB1456D0008F737 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +226,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		09BDD4AB1DB81A5F00D406BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BDD4B21DB81A5F00D406BE /* UnravlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5A180DC1DB1456D0008F737 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +251,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09BDD4B51DB81A5F00D406BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A180DF1DB1456D0008F737 /* Unravl */;
+			targetProxy = 09BDD4B41DB81A5F00D406BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A5A180E71DB1456D0008F737 /* Main.storyboard */ = {
@@ -200,6 +280,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		09BDD4B71DB81A6000D406BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5FDK5DU7G6;
+				INFOPLIST_FILE = UnravlUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litaf.UnravlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Unravl;
+			};
+			name = Debug;
+		};
+		09BDD4B81DB81A6000D406BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5FDK5DU7G6;
+				INFOPLIST_FILE = UnravlUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litaf.UnravlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Unravl;
+			};
+			name = Release;
+		};
 		A5A180F01DB1456D0008F737 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +434,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09BDD4B61DB81A6000D406BE /* Build configuration list for PBXNativeTarget "UnravlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BDD4B71DB81A6000D406BE /* Debug */,
+				09BDD4B81DB81A6000D406BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A5A180DB1DB1456D0008F737 /* Build configuration list for PBXProject "Unravl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
