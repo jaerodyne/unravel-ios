@@ -11,6 +11,7 @@ import UIKit
 class FinishedGamesVC: UIViewController {
     
     @IBAction func homeBtnPressed(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
         guard navigationController?.popToRootViewController(animated: true) != nil
             else {
                 print("No Navigation Controller")

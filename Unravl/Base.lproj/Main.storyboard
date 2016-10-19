@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-Au-xxL">
@@ -42,7 +42,7 @@
                                             <color key="titleColor" red="0.11508413461538458" green="0.11508413461538458" blue="0.11508413461538458" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="oz8-mX-qmT" kind="show" id="Tau-Ra-g2M"/>
+                                            <segue destination="oz8-mX-qmT" kind="presentation" modalTransitionStyle="partialCurl" id="Tau-Ra-g2M"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQa-cE-ekw">
@@ -51,7 +51,7 @@
                                             <color key="titleColor" red="0.11508413461538458" green="0.11508413461538458" blue="0.11508413461538458" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="evb-d8-Thd" kind="show" id="aMs-ee-BFc"/>
+                                            <segue destination="evb-d8-Thd" kind="presentation" modalTransitionStyle="partialCurl" id="aMs-ee-BFc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -86,7 +86,7 @@
                         <viewControllerLayoutGuide type="bottom" id="enO-XG-dlI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FpQ-pn-lR3">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-RT-LAT">
@@ -98,7 +98,7 @@
                                 <frame key="frameInset" minX="20" minY="170" width="627" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="The Fountainhead">
+                                <state key="normal" title="The Little Engine That Could">
                                     <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -139,7 +139,7 @@
                         <viewControllerLayoutGuide type="bottom" id="57f-qT-xvF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZkW-LY-6Ai">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oem-hR-Bcz">
@@ -174,7 +174,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fAX-W8-YcJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RGA-c0-5rE">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fJ-TR-KSz">
@@ -209,7 +209,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Cbv-Cb-jae"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fqV-V9-TxI">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH7-01-3f0">
@@ -271,29 +271,18 @@
                         <viewControllerLayoutGuide type="bottom" id="qSr-UV-M9x"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R62-pk-sw8">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqh-aQ-8tE">
-                                <frame key="frameInset" minX="266" minY="28" width="134" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn3-bA-tlg">
+                                <frame key="frameInset" minX="20" minY="337" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJs-ZE-diI">
-                                <frame key="frameInset" minX="627" minY="330" width="11" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
-                                <frame key="frameInset" minY="110" width="667" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-Aw-9IT">
+                                <state key="normal" image="home_btn"/>
+                                <connections>
+                                    <action selector="homeBtnPressed:" destination="3Jg-2x-bWs" eventType="touchUpInside" id="jjd-rv-cZr"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-Aw-9IT">
                                 <frame key="frameInset" minX="276" minY="72" width="115" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
@@ -304,25 +293,21 @@
                                     <segue destination="xB4-PW-FDp" kind="show" identifier="FinishedGamesVC" id="uuo-Z6-NTl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yn3-bA-tlg">
-                                <frame key="frameInset" minX="20" minY="337" width="30" height="30"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
+                                <frame key="frameInset" minY="72" width="667" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home_btn"/>
-                                <connections>
-                                    <action selector="homeBtnPressed:" destination="3Jg-2x-bWs" eventType="touchUpInside" id="jjd-rv-cZr"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="webView" destination="kBl-0F-0ZK" id="FVT-hP-1eF"/>
-                        <outlet property="wordsCounterLbl" destination="PJs-ZE-diI" id="ues-jt-DTq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svG-Dy-6KG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2050" y="-1002"/>
+            <point key="canvasLocation" x="2049.6251874062968" y="-1002.4"/>
         </scene>
         <!--Finished GamesVC-->
         <scene sceneID="ZKC-yo-s5z">
@@ -333,7 +318,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZAQ-Ws-sSE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MVN-kw-ys2">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkR-r7-FMa">
@@ -399,6 +384,6 @@
     <resources>
         <image name="back_btn" width="17" height="15"/>
         <image name="home_btn" width="15" height="9"/>
-        <image name="unravl-logo" width="300" height="100"/>
+        <image name="unravl-logo" width="525" height="177"/>
     </resources>
 </document>
