@@ -117,7 +117,7 @@
                                     <segue destination="x1E-VB-Jw3" kind="show" id="de6-f0-PZh"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-im-KJM">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-im-KJM">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEe-7I-Phz">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
@@ -148,9 +148,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="wRi-RT-LAT" secondAttribute="trailing" constant="200" id="Y9v-Qq-qQy"/>
                             <constraint firstItem="wRi-RT-LAT" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="200" id="Zsq-xK-MXa"/>
                             <constraint firstItem="wRi-RT-LAT" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="30" id="gUP-vl-Nbf"/>
-                            <constraint firstItem="enO-XG-dlI" firstAttribute="top" secondItem="5vy-im-KJM" secondAttribute="bottom" constant="56" id="h05-5L-7e6"/>
+                            <constraint firstItem="enO-XG-dlI" firstAttribute="top" secondItem="5vy-im-KJM" secondAttribute="bottom" constant="60" id="h05-5L-7e6"/>
                             <constraint firstItem="5vy-im-KJM" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="183" id="lUt-8t-ZhB"/>
-                            <constraint firstItem="AvD-il-hED" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="125" id="rq4-N4-ZZw"/>
+                            <constraint firstItem="AvD-il-hED" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="110" id="rq4-N4-ZZw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AvD-il-hED" secondAttribute="trailing" constant="165" id="vxA-zq-syF"/>
                             <constraint firstItem="AvD-il-hED" firstAttribute="trailing" secondItem="5vy-im-KJM" secondAttribute="trailing" id="woQ-ga-1aI"/>
                         </constraints>
@@ -226,6 +226,13 @@
                                     <action selector="backBtnPressed:" destination="evb-d8-Thd" eventType="touchUpInside" id="Y7I-3p-cFs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14L-qH-9ot">
+                                <frame key="frameInset" minX="292" minY="20" width="103" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcY-O1-Gfm">
                                 <frame key="frameInset" minX="89" minY="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -234,7 +241,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-Kb-YNE">
-                                <frame key="frameInset" minX="48" minY="74" width="570" height="260"/>
+                                <frame key="frameInset" minX="158" minY="84" width="371" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">As of right now, 14% of the U.S. are unable to read. To give you a better idea, that is 32 million people. To further the gravity of this issue, this statistic hasn’t changed in 10 years.
@@ -247,13 +254,6 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14L-qH-9ot">
-                                <frame key="frameInset" minX="292" minY="20" width="103" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
