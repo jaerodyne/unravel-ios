@@ -9,11 +9,16 @@
 import UIKit
 
 class ReadChapterVC: UIViewController {
-
+    
+    @IBOutlet weak var storyTextView: UITextView!
+    
+    let baseURL = "https://unravl.herokuapp.com/demo"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        getJSON()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +26,29 @@ class ReadChapterVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func getJSON() {
 
-    /*
-    // MARK: - Navigation
+        let url = NSURL(string: baseURL)
+        let request = URLRequest(url: url! as URL)
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let task = session.dataTask(with: request) { (data, response, error) -> Void in
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+            if error == nil {
+                let swiftyJSON = JSON(data: data!)
+                print(swiftyJSON)
+//                let theTitle = swiftyJSON["results"].arrayValue
+//
+//                for title in theTitle {
+//                    let titles = title["title"].stringValue
+//                    print(titles)
+//                }
+//
+//                //                print(theTitle)
+//
+//            } else {
+//                print("There was an error")
+            }
+        }
+        task.resume()
     }
-    */
-
 }
