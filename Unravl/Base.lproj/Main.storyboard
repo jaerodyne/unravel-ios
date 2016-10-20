@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-RT-LAT">
-                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -108,8 +108,7 @@
                                     <action selector="backBtnPressed:" destination="Kfl-ub-ylF" eventType="touchUpInside" id="yR7-cD-G5Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-il-hED">
-                                <frame key="frameInset" minX="184" minY="127" width="298" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-il-hED">
                                 <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Caitlin's Experimental Poetry - A Series">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -118,30 +117,24 @@
                                     <segue destination="x1E-VB-Jw3" kind="show" id="de6-f0-PZh"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-im-KJM">
-                                <frame key="frameInset" minX="203" minY="171" width="260" height="148"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-im-KJM">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jeff's Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEe-7I-Phz">
-                                        <frame key="frameInset" minX="68" width="124" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEe-7I-Phz">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jeff's Opinions: TBA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3e-PV-Cii">
-                                        <frame key="frameInset" minX="53" minY="42" width="155" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Opinions: TBA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3e-PV-Cii">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jillian's Triumph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-2Z-Ze0">
-                                        <frame key="frameInset" minX="70" minY="83" width="121" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jillian's Triumph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-2Z-Ze0">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thuy's d3 Journey: An Epi(c)logue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ev-BS-SVN">
-                                        <frame key="frameInset" minY="125" width="260" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thuy's d3 Journey: An Epi(c)logue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ev-BS-SVN">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -151,10 +144,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="wRi-RT-LAT" secondAttribute="trailing" constant="247" id="Y9v-Qq-qQy"/>
-                            <constraint firstItem="wRi-RT-LAT" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="246" id="Zsq-xK-MXa"/>
+                            <constraint firstItem="AvD-il-hED" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="164" id="Lja-zt-r1u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wRi-RT-LAT" secondAttribute="trailing" constant="200" id="Y9v-Qq-qQy"/>
+                            <constraint firstItem="wRi-RT-LAT" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="200" id="Zsq-xK-MXa"/>
                             <constraint firstItem="wRi-RT-LAT" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="30" id="gUP-vl-Nbf"/>
-                            <constraint firstItem="AvD-il-hED" firstAttribute="top" secondItem="wRi-RT-LAT" secondAttribute="top" id="mcj-Ul-sA5"/>
+                            <constraint firstItem="enO-XG-dlI" firstAttribute="top" secondItem="5vy-im-KJM" secondAttribute="bottom" constant="56" id="h05-5L-7e6"/>
+                            <constraint firstItem="5vy-im-KJM" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="183" id="lUt-8t-ZhB"/>
+                            <constraint firstItem="AvD-il-hED" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="125" id="rq4-N4-ZZw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AvD-il-hED" secondAttribute="trailing" constant="165" id="vxA-zq-syF"/>
+                            <constraint firstItem="AvD-il-hED" firstAttribute="trailing" secondItem="5vy-im-KJM" secondAttribute="trailing" id="woQ-ga-1aI"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -472,7 +470,7 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sAQ-96-LvH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Y9-P0-egb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0Y9-P0-egb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
