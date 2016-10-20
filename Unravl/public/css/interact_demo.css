@@ -5,6 +5,7 @@
 
 body {
   width: 650px;
+  margin-left: 115px;
 }
 
 #outer-dropzone {
