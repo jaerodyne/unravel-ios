@@ -36,7 +36,8 @@ class ReadChapterVC: UIViewController {
             if error == nil {
                 let swiftyJSON = JSON(data: data!)
                 print(swiftyJSON)
-//                let theTitle = swiftyJSON["results"].arrayValue
+                let theTitle = swiftyJSON["text"].arrayValue
+                print(theTitle)
 //
 //                for title in theTitle {
 //                    let titles = title["title"].stringValue
