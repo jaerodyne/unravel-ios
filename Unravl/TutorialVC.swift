@@ -8,20 +8,31 @@
 
 import UIKit
 
-class TutorialVC: UIViewController {
+class TutorialVC: UIViewController, UIWebViewDelegate {
 
+    @IBOutlet weak var webView: UIWebView!
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //        print(getJSON())
+        
+        if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "public") {
+            let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
+            let myRequest = NSURLRequest(url: fragUrl as URL)
+            webView.delegate = self
+            webView.loadRequest(myRequest as URLRequest)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        webView.scrollView.isScrollEnabled = false
+        webView.scrollView.bounces = false
+        
     }
     
 
