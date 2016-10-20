@@ -391,6 +391,9 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="0.1228565705" green="0.1228565705" blue="0.1228565705" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3Jg-2x-bWs" kind="show" id="WQW-bQ-aUA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCe-Bn-ckQ">
                                 <frame key="frameInset" minX="445" minY="172" width="103" height="30"/>
@@ -441,4 +444,7 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
         <image name="home_btn" width="15" height="9"/>
         <image name="unravl-logo" width="525" height="177"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WQW-bQ-aUA"/>
+    </inferredMetricsTieBreakers>
 </document>
