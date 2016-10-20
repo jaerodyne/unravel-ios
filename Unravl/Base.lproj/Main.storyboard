@@ -348,8 +348,8 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                                     <segue destination="xB4-PW-FDp" kind="show" identifier="FinishedGamesVC" id="uuo-Z6-NTl"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
-                                <frame key="frameInset" minY="72" width="667" height="250"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
+                                <frame key="frameInset" width="667" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
