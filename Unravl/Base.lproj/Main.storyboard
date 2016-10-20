@@ -442,18 +442,25 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5RF-Yw-Hc1">
-                                <frame key="frameInset" minX="20" minY="141" width="627" height="110"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RF-Yw-Hc1">
+                                <frame key="frameInset" minX="52" minY="141" width="563" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-                                <string key="text">He was excited, almost too excited. He took the train, and when he first saw the tall buildings through the windows, he felt intimidated. He walked down the city blocks, noticing all the people. On his way home, he was happy he'd gone to the city.
+                                <string key="text">        He was excited, almost too excited. He took the train, and when he first saw the tall buildings through the windows, he felt intimidated. He walked down the city blocks, noticing all the people. On his way home, he was happy he'd gone to the city.
 </string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caitlin's Experimental Poetry - A Series" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-ld-TJ5">
+                                <frame key="frameInset" minX="50" minY="50" width="566" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
