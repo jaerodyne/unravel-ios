@@ -23,6 +23,7 @@
 		A5C8F0941DB939D5004F71FC /* tutorial in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F0931DB939D5004F71FC /* tutorial */; };
 		A5C8F0981DB94811004F71FC /* ReadChapterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F0971DB94811004F71FC /* ReadChapterVC.swift */; };
 		A5C8F09E1DB951FE004F71FC /* public in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F09D1DB951FE004F71FC /* public */; };
+		A5C8F0A01DB95829004F71FC /* LITTLELO.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F09F1DB95829004F71FC /* LITTLELO.TTF */; };
 		A5D3C7641DB1E4ED00CEC0E1 /* FinishedGamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +55,10 @@
 		A5A180EF1DB1456D0008F737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A180F51DB14BF30008F737 /* StoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
 		A5A180F71DB16B100008F737 /* ChaptersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersVC.swift; sourceTree = "<group>"; };
-		A5C8F08E1DB931B6004F71FC /* LITTLELO.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LITTLELO.TTF; sourceTree = "<group>"; };
 		A5C8F0931DB939D5004F71FC /* tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tutorial; sourceTree = "<group>"; };
 		A5C8F0971DB94811004F71FC /* ReadChapterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadChapterVC.swift; sourceTree = "<group>"; };
 		A5C8F09D1DB951FE004F71FC /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		A5C8F09F1DB95829004F71FC /* LITTLELO.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LITTLELO.TTF; sourceTree = "<group>"; };
 		A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedGamesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,8 +126,8 @@
 				09941BA61DB2E97D004B4058 /* SwiftyJSON.swift */,
 				09BD0F801DB4386600E4E14F /* AboutVC.swift */,
 				09BD0F821DB4387700E4E14F /* TutorialVC.swift */,
-				A5C8F08E1DB931B6004F71FC /* LITTLELO.TTF */,
 				A5C8F0971DB94811004F71FC /* ReadChapterVC.swift */,
+				A5C8F09F1DB95829004F71FC /* LITTLELO.TTF */,
 			);
 			path = Unravl;
 			sourceTree = "<group>";
@@ -223,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C8F0A01DB95829004F71FC /* LITTLELO.TTF in Resources */,
 				A5A180EE1DB1456D0008F737 /* LaunchScreen.storyboard in Resources */,
 				A5C8F0941DB939D5004F71FC /* tutorial in Resources */,
 				09941BA51DB2D961004B4058 /* home.html in Resources */,
