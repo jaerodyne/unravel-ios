@@ -37,6 +37,9 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        webView.scrollView.isScrollEnabled = false
+        webView.scrollView.bounces = false
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
