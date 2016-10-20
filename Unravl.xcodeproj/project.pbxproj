@@ -13,7 +13,6 @@
 		09BD0F811DB4386600E4E14F /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD0F801DB4386600E4E14F /* AboutVC.swift */; };
 		09BD0F831DB4387700E4E14F /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD0F821DB4387700E4E14F /* TutorialVC.swift */; };
 		09BDD4B21DB81A5F00D406BE /* UnravlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BDD4B11DB81A5F00D406BE /* UnravlUITests.swift */; };
-		A5875ACB1DB6DDF800752B55 /* public in Resources */ = {isa = PBXBuildFile; fileRef = A5875ACA1DB6DDF800752B55 /* public */; };
 		A5A180E41DB1456D0008F737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180E31DB1456D0008F737 /* AppDelegate.swift */; };
 		A5A180E61DB1456D0008F737 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180E51DB1456D0008F737 /* MainVC.swift */; };
 		A5A180E91DB1456D0008F737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A180E71DB1456D0008F737 /* Main.storyboard */; };
@@ -21,6 +20,10 @@
 		A5A180EE1DB1456D0008F737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A180EC1DB1456D0008F737 /* LaunchScreen.storyboard */; };
 		A5A180F61DB14BF30008F737 /* StoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180F51DB14BF30008F737 /* StoriesVC.swift */; };
 		A5A180F81DB16B100008F737 /* ChaptersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A180F71DB16B100008F737 /* ChaptersVC.swift */; };
+		A5C8F0941DB939D5004F71FC /* tutorial in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F0931DB939D5004F71FC /* tutorial */; };
+		A5C8F0981DB94811004F71FC /* ReadChapterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8F0971DB94811004F71FC /* ReadChapterVC.swift */; };
+		A5C8F09E1DB951FE004F71FC /* public in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F09D1DB951FE004F71FC /* public */; };
+		A5C8F0A01DB95829004F71FC /* LITTLELO.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A5C8F09F1DB95829004F71FC /* LITTLELO.TTF */; };
 		A5D3C7641DB1E4ED00CEC0E1 /* FinishedGamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +46,6 @@
 		09BDD4AF1DB81A5F00D406BE /* UnravlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnravlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BDD4B11DB81A5F00D406BE /* UnravlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnravlUITests.swift; sourceTree = "<group>"; };
 		09BDD4B31DB81A5F00D406BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5875ACA1DB6DDF800752B55 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		A5A180E01DB1456D0008F737 /* Unravl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unravl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A180E31DB1456D0008F737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A180E51DB1456D0008F737 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		A5A180EF1DB1456D0008F737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A180F51DB14BF30008F737 /* StoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
 		A5A180F71DB16B100008F737 /* ChaptersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersVC.swift; sourceTree = "<group>"; };
+		A5C8F0931DB939D5004F71FC /* tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tutorial; sourceTree = "<group>"; };
+		A5C8F0971DB94811004F71FC /* ReadChapterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadChapterVC.swift; sourceTree = "<group>"; };
+		A5C8F09D1DB951FE004F71FC /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		A5C8F09F1DB95829004F71FC /* LITTLELO.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LITTLELO.TTF; sourceTree = "<group>"; };
 		A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedGamesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +110,8 @@
 		A5A180E21DB1456D0008F737 /* Unravl */ = {
 			isa = PBXGroup;
 			children = (
-				A5875ACA1DB6DDF800752B55 /* public */,
+				A5C8F09D1DB951FE004F71FC /* public */,
+				A5C8F0931DB939D5004F71FC /* tutorial */,
 				A5A180EF1DB1456D0008F737 /* Info.plist */,
 				09941BA41DB2D961004B4058 /* home.html */,
 				A5A180E31DB1456D0008F737 /* AppDelegate.swift */,
@@ -119,6 +126,8 @@
 				09941BA61DB2E97D004B4058 /* SwiftyJSON.swift */,
 				09BD0F801DB4386600E4E14F /* AboutVC.swift */,
 				09BD0F821DB4387700E4E14F /* TutorialVC.swift */,
+				A5C8F0971DB94811004F71FC /* ReadChapterVC.swift */,
+				A5C8F09F1DB95829004F71FC /* LITTLELO.TTF */,
 			);
 			path = Unravl;
 			sourceTree = "<group>";
@@ -215,9 +224,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5875ACB1DB6DDF800752B55 /* public in Resources */,
+				A5C8F0A01DB95829004F71FC /* LITTLELO.TTF in Resources */,
 				A5A180EE1DB1456D0008F737 /* LaunchScreen.storyboard in Resources */,
+				A5C8F0941DB939D5004F71FC /* tutorial in Resources */,
 				09941BA51DB2D961004B4058 /* home.html in Resources */,
+				A5C8F09E1DB951FE004F71FC /* public in Resources */,
 				A5A180EB1DB1456D0008F737 /* Assets.xcassets in Resources */,
 				A5A180E91DB1456D0008F737 /* Main.storyboard in Resources */,
 			);
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C8F0981DB94811004F71FC /* ReadChapterVC.swift in Sources */,
 				A5A180F61DB14BF30008F737 /* StoriesVC.swift in Sources */,
 				0988C63F1DB1A24D00166557 /* WordsVC.swift in Sources */,
 				A5A180E61DB1456D0008F737 /* MainVC.swift in Sources */,
@@ -441,6 +453,7 @@
 				09BDD4B81DB81A6000D406BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5A180DB1DB1456D0008F737 /* Build configuration list for PBXProject "Unravl" */ = {
 			isa = XCConfigurationList;

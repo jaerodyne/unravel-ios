@@ -6,6 +6,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LITTLELO.TTF">
+            <string>LittleLordFontleroy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
@@ -90,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-RT-LAT">
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,43 +108,33 @@
                                     <action selector="backBtnPressed:" destination="Kfl-ub-ylF" eventType="touchUpInside" id="yR7-cD-G5Z"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zwk-fo-RBe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-il-hED">
+                                <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Caitlin's Experimental Poetry - A Series">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x1E-VB-Jw3" kind="show" id="de6-f0-PZh"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-im-KJM">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-7S-NrF">
-                                        <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Caitlin's Experimental Poetry - A Series">
-                                            <color key="titleColor" red="0.1150841346" green="0.1150841346" blue="0.1150841346" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="x1E-VB-Jw3" kind="show" id="iGx-dE-geP"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPB-D8-bic">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Dad Jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEe-7I-Phz">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Candy Preferences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85s-Sf-j3c">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Opinions: TBA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3e-PV-Cii">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeff's Opinions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npu-mJ-oFA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jillian's Triumph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAe-2Z-Ze0">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's Not Important" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo7-Vj-PRD">
-                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jillian's Triumph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elj-S4-q4o">
-                                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thuy's d3 Journey: An Epi(c)logue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeH-K9-sQn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thuy's d3 Journey: An Epi(c)logue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ev-BS-SVN">
                                         <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -149,16 +144,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="enO-XG-dlI" firstAttribute="top" secondItem="zwk-fo-RBe" secondAttribute="bottom" constant="53" id="TnK-E9-kTx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wRi-RT-LAT" secondAttribute="trailing" constant="247" id="Y9v-Qq-qQy"/>
-                            <constraint firstItem="wRi-RT-LAT" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="246" id="Zsq-xK-MXa"/>
-                            <constraint firstItem="zwk-fo-RBe" firstAttribute="centerX" secondItem="FpQ-pn-lR3" secondAttribute="centerX" id="cl0-Dx-8BH"/>
-                            <constraint firstItem="wRi-RT-LAT" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="20" id="gUP-vl-Nbf"/>
+                            <constraint firstItem="AvD-il-hED" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="164" id="Lja-zt-r1u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wRi-RT-LAT" secondAttribute="trailing" constant="200" id="Y9v-Qq-qQy"/>
+                            <constraint firstItem="wRi-RT-LAT" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="200" id="Zsq-xK-MXa"/>
+                            <constraint firstItem="wRi-RT-LAT" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="30" id="gUP-vl-Nbf"/>
+                            <constraint firstItem="enO-XG-dlI" firstAttribute="top" secondItem="5vy-im-KJM" secondAttribute="bottom" constant="60" id="h05-5L-7e6"/>
+                            <constraint firstItem="5vy-im-KJM" firstAttribute="leading" secondItem="FpQ-pn-lR3" secondAttribute="leadingMargin" constant="183" id="lUt-8t-ZhB"/>
+                            <constraint firstItem="AvD-il-hED" firstAttribute="top" secondItem="Rjy-2q-8NB" secondAttribute="bottom" constant="110" id="rq4-N4-ZZw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AvD-il-hED" secondAttribute="trailing" constant="165" id="vxA-zq-syF"/>
+                            <constraint firstItem="AvD-il-hED" firstAttribute="trailing" secondItem="5vy-im-KJM" secondAttribute="trailing" id="woQ-ga-1aI"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="story" destination="kYj-7S-NrF" id="gNt-Hu-Zk1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvP-hM-Y0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,20 +180,31 @@
                                     <action selector="backBtnPressed:" destination="oz8-mX-qmT" eventType="touchUpInside" id="TQ8-pt-LkN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tutorial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG8-Qh-aMQ">
-                                <frame key="frameInset" minX="280" minY="28" width="107" height="38"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jw1-rY-qPg">
+                                <frame key="frameInset" minY="72" width="667" height="253"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oz8-mX-qmT" id="Nec-ec-bEu"/>
+                                </connections>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tutorial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG8-Qh-aMQ">
+                                <frame key="frameInset" minX="280" minY="28" width="107" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Jw1-rY-qPg" id="vhi-bB-tQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mw-pD-Cg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="-87"/>
+            <point key="canvasLocation" x="608.54572713643188" y="-87.200000000000003"/>
         </scene>
         <!--AboutVC-->
         <scene sceneID="qjm-TW-QkW">
@@ -220,9 +227,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14L-qH-9ot">
-                                <frame key="frameInset" minX="292" minY="28" width="83" height="38"/>
+                                <frame key="frameInset" minX="292" minY="20" width="103" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -234,7 +241,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-Kb-YNE">
-                                <frame key="frameInset" minX="48" minY="74" width="570" height="260"/>
+                                <frame key="frameInset" minX="158" minY="84" width="371" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">As of right now, 14% of the U.S. are unable to read. To give you a better idea, that is 32 million people. To further the gravity of this issue, this statistic hasn’t changed in 10 years.
@@ -270,7 +277,7 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH7-01-3f0">
                                 <frame key="frameInset" minX="266" minY="20" width="134" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -348,8 +355,8 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                                     <segue destination="xB4-PW-FDp" kind="show" identifier="FinishedGamesVC" id="uuo-Z6-NTl"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
-                                <frame key="frameInset" minY="72" width="667" height="250"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-0F-0ZK">
+                                <frame key="frameInset" width="667" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -383,6 +390,9 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                                 <state key="normal" title="Read Chapter">
                                     <color key="titleColor" red="0.1228565705" green="0.1228565705" blue="0.1228565705" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="HCQ-wU-Eje" kind="presentation" modalTransitionStyle="partialCurl" id="6DD-0n-y9f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7c-gh-abh">
                                 <frame key="frameInset" minX="298" minY="172" width="80" height="30"/>
@@ -391,6 +401,9 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="0.1228565705" green="0.1228565705" blue="0.1228565705" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3Jg-2x-bWs" kind="show" id="WQW-bQ-aUA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCe-Bn-ckQ">
                                 <frame key="frameInset" minX="445" minY="172" width="103" height="30"/>
@@ -417,6 +430,55 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
             </objects>
             <point key="canvasLocation" x="2767" y="-1002"/>
         </scene>
+        <!--Read ChapterVC-->
+        <scene sceneID="7og-83-5KO">
+            <objects>
+                <viewController id="HCQ-wU-Eje" customClass="ReadChapterVC" customModule="Unravl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HcC-ln-qBO"/>
+                        <viewControllerLayoutGuide type="bottom" id="zl0-xJ-SAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t3I-Nf-pWd">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RF-Yw-Hc1">
+                                <frame key="frameInset" minX="52" minY="141" width="563" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">        He was excited, almost too excited. He took the train, and when he first saw the tall buildings through the windows, he felt intimidated. He walked down the city blocks, noticing all the people. On his way home, he was happy he'd gone to the city.
+</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caitlin's Experimental Poetry - A Series" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-ld-TJ5">
+                                <frame key="frameInset" minX="50" minY="50" width="566" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The End" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8c-Vf-mU1">
+                                <frame key="frameInset" minX="224" minY="257" width="218" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LittleLordFontleroy" family="LittleLordFontleroy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="storyTextView" destination="5RF-Yw-Hc1" id="84l-EE-FKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pur-Sh-MNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2766.5667166416792" y="-1703.2"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="jm0-vf-mbB">
             <objects>
@@ -441,4 +503,7 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
         <image name="home_btn" width="15" height="9"/>
         <image name="unravl-logo" width="525" height="177"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rkm-vg-0hT"/>
+    </inferredMetricsTieBreakers>
 </document>

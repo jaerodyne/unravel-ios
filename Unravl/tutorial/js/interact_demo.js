@@ -44,17 +44,17 @@ function renderInteract() {
     }
 
     // this is used later in the resizing and gesture demos
-    window.dragMoveListener = dragMoveListener;
+    // window.dragMoveListener = dragMoveListener;
 
     /* The dragging code for '.draggable' from the demo above
    * applies to this demo as well so it doesn't have to be repeated. */
 
   // enable draggables to be dropped into this
-  interact('#inner-dropzone').dropzone({
+  interact('.dropzone').dropzone({
     // only accept elements matching this CSS selector
     accept: '.yes-drop',
     // Require a 75% element overlap for a drop to be possible
-    overlap: .01,
+    overlap: 1.0,
 
     // listen for drop related events:
 
@@ -66,6 +66,8 @@ function renderInteract() {
     ondragenter: function (event) {
       var draggableElement = event.relatedTarget,
           dropzoneElement = event.target;
+      draggableElement.classList.add('drop-active');
+      dropzoneElement.classList.add('drop-target');
       console.log('drag enter');
     },
     ondragleave: function (event) {
@@ -74,12 +76,7 @@ function renderInteract() {
     },
     ondrop: function (event) {
       console.log('drop');
-      if (currentSentenceIndex === sentences.length - 1) {
-        window.location = "https://www.wtf.com/wtf/wtaf";
-      } else {
-        currentSentenceIndex += 1;
-        run(sentences[currentSentenceIndex]);
-      }
+      $('p.message').text('Great job!! Matt thanks you.')
     },
     ondropdeactivate: function (event) {
       // remove active dropzone feedback

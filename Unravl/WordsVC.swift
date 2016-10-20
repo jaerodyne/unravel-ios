@@ -37,6 +37,9 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        webView.scrollView.isScrollEnabled = false
+        webView.scrollView.bounces = false
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -44,7 +47,7 @@ class WordsVC: UIViewController, UIWebViewDelegate {
     }
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        if String(describing: request) == "https://www.google.com/" {
+        if String(describing: request) == "https://www.wtf.com/wtf/wtaf" {
             performSegue(withIdentifier: "FinishedGamesVC", sender: nil)
 
         }

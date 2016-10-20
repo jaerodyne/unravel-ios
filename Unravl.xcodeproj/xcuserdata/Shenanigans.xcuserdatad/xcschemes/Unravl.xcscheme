@@ -37,6 +37,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "09BDD4AE1DB81A5F00D406BE"
+               BuildableName = "UnravlUITests.xctest"
+               BlueprintName = "UnravlUITests"
+               ReferencedContainer = "container:Unravl.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
