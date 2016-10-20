@@ -19,7 +19,7 @@ class TutorialVC: UIViewController, UIWebViewDelegate {
         
         //        print(getJSON())
         
-        if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "public") {
+        if let url = Bundle.main.url(forResource: "tutorial", withExtension: "html", subdirectory: "tutorial") {
             let fragUrl = NSURL(string: "#FRAG_URL", relativeTo: url)!
             let myRequest = NSURLRequest(url: fragUrl as URL)
             webView.delegate = self
