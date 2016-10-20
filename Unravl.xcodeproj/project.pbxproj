@@ -53,6 +53,7 @@
 		A5A180EF1DB1456D0008F737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A180F51DB14BF30008F737 /* StoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
 		A5A180F71DB16B100008F737 /* ChaptersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaptersVC.swift; sourceTree = "<group>"; };
+		A5C8F08E1DB931B6004F71FC /* LITTLELO.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LITTLELO.TTF; sourceTree = "<group>"; };
 		A5D3C7631DB1E4ED00CEC0E1 /* FinishedGamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedGamesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +120,7 @@
 				09941BA61DB2E97D004B4058 /* SwiftyJSON.swift */,
 				09BD0F801DB4386600E4E14F /* AboutVC.swift */,
 				09BD0F821DB4387700E4E14F /* TutorialVC.swift */,
+				A5C8F08E1DB931B6004F71FC /* LITTLELO.TTF */,
 			);
 			path = Unravl;
 			sourceTree = "<group>";
@@ -441,6 +443,7 @@
 				09BDD4B81DB81A6000D406BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5A180DB1DB1456D0008F737 /* Build configuration list for PBXProject "Unravl" */ = {
 			isa = XCConfigurationList;
