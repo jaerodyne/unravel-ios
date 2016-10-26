@@ -1,3 +1,1 @@
-# unravl-ios
-
-Native to iOS
+Unravel is an iOS app designed to help improve literacy. We believe that by using emerging touchscreen and interactive technology, we will be able to motivate and inspire people of all ages to learn to read in a tactile, more immediate way. Our main goal is to introduce reading to our users with a sense of inherent playfulness and hands-on activity.
