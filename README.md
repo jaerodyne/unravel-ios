@@ -1,7 +1,8 @@
-#Description
+#Unravel
 
 ![unravel-mockup](https://cloud.githubusercontent.com/assets/17561356/19949450/bb9c2f84-a11f-11e6-9af9-ad7b9c1166da.png)
 
+#Description
 As of right now, 14% of the U.S. are unable to read. To give you a better idea, that is 32 million people. To further the gravity of this issue, this statistic hasn’t changed in 10 years. 
 
 This is where Unravel comes in. We believe that by using emerging touchscreen and interactive technology, we will be able to motivate and inspire people of all ages to learn to read in a tactile, more immediate way. Our main goal is to introduce reading to our users with a sense of inherent playfulness and hands-on activity. 
