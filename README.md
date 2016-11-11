@@ -14,4 +14,4 @@ Ultimately, Unravel aims to move the concept of literacy into an entirely new ap
 
 #Technologies Used
 * Back End: Rails API
-* Front End: Swift, Javascript, Matter.js, D3.js
+* Front End: Swift, Javascript, interact.js, D3.js
