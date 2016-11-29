@@ -1,6 +1,7 @@
 #Unravel
 
 ![unravel-mockup](https://cloud.githubusercontent.com/assets/17561356/19949450/bb9c2f84-a11f-11e6-9af9-ad7b9c1166da.png)
+![unravel-demo-2](https://cloud.githubusercontent.com/assets/17561356/20691511/2463e512-b597-11e6-837f-635254c0319e.gif)
 
 #Description
 As of right now, 14% of the U.S. are unable to read. To give you a better idea, that is 32 million people. To further the gravity of this issue, this statistic hasn’t changed in 10 years. 
